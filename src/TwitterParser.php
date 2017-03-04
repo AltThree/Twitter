@@ -22,7 +22,7 @@ use League\CommonMark\InlineParserContext;
  */
 class TwitterParser extends AbstractInlineParser
 {
-	/**
+    /**
      * {@inheritdoc}
      */
     public function getCharacters()

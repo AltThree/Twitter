@@ -23,19 +23,19 @@ use GrahamCampbell\TestBench\AbstractPackageTestCase;
  */
 abstract class AbstractTestCase extends AbstractPackageTestCase
 {
-	/**
-	 * Setup the application environment.
-	 *
-	 * @param \Illuminate\Contracts\Foundation\Application $app
-	 *
-	 * @return void
-	 */
-	protected function getEnvironmentSetUp($app)
-	{
-		parent::getEnvironmentSetUp($app);
+    /**
+     * Setup the application environment.
+     *
+     * @param \Illuminate\Contracts\Foundation\Application $app
+     *
+     * @return void
+     */
+    protected function getEnvironmentSetUp($app)
+    {
+        parent::getEnvironmentSetUp($app);
 
-		$app->config->set('markdown.extensions', [TwitterExtension::class]);
-	}
+        $app->config->set('markdown.extensions', [TwitterExtension::class]);
+    }
 
     /**
      * Get the required service providers.
