@@ -23,7 +23,9 @@ use League\CommonMark\InlineParserContext;
 class TwitterParser extends AbstractInlineParser
 {
     /**
-     * {@inheritdoc}
+     * Get the characters that must be matched.
+     *
+     * @return string[]
      */
     public function getCharacters()
     {
@@ -31,7 +33,13 @@ class TwitterParser extends AbstractInlineParser
     }
 
     /**
-     * {@inheritdoc}
+     * Parse a line and determine if it contains a handle.
+     *
+     * If it does, then we do the necessary.
+     *
+     * @param \League\CommonMark\InlineParserContext $inlineContext
+     *
+     * @return bool
      */
     public function parse(InlineParserContext $inlineContext)
     {
