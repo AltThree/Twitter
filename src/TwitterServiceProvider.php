@@ -38,7 +38,7 @@ class TwitterServiceProvider extends ServiceProvider
      */
     protected function registerParser()
     {
-        $this->app->singleton(TwitterParser::class, function (Container $app) {
+        $this->app->singleton(TwitterParser::class, function () {
             return new TwitterParser();
         });
     }
