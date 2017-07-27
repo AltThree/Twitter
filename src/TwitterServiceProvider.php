@@ -11,7 +11,6 @@
 
 namespace AltThree\Twitter;
 
-use Illuminate\Contracts\Container\Container;
 use Illuminate\Support\ServiceProvider;
 
 /**
